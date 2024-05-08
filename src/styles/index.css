@@ -1,3 +1,131 @@
 /* 
     General Styles
 */
+body {
+    background-color: #121212; 
+    color: #d0d0d0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.modal {
+    display: block;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364); 
+    border: 1px solid #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 255, 255, 0.6);
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+}
+
+.agendas-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins', sans-serif; 
+    max-width: 600px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.agendas-container h1 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.agendas-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    width: 100%; 
+    gap: 10px; 
+}
+
+.agendas-list li {
+    flex: 1 1 48%; 
+    background: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    color: #333; 
+}
+
+.agendas-list li:hover {
+    background-color: #e0e0e0; 
+    color: #222;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.input-group input {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+.input-group button {
+    width: 150px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.input-group button:hover {
+    background-color: #0056b3;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+li {
+    padding: 10px 20px;
+    border-bottom: 1px solid #333;
+    background-color: #16222a; 
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s, color 0.3s; 
+    color: #b0c4de; 
+}
+
+li:hover {
+    background: linear-gradient(to right, #3a6073, #3a7bd5);
+    color: #ffffff; 
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 255, 255, 0.8);
+}
+
+li:hover *{
+    color: #ffffff;
+}
+
+.contact-buttons {
+    padding: 5px 10px;
+    margin: 2px;
+    background: #0f2027;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 0.9em;
+    transition: background-color 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+
+.contact-buttons:hover {
+    background: #1f5a7d; 
+    transform: translateY(-3px);
+    box-shadow: 0 2px 8px rgba(0, 255, 255, 0.9); 
+}
+
+.contact-buttons:active {
+    transform: translateY(1px);
+    background: #0d3c61; 
+}

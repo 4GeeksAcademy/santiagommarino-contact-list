@@ -8,8 +8,6 @@ export const Home = () => (
 		<p>
 			<img src={rigoImage} />
 		</p>
-		<a href="#" className="btn btn-success">
-			If you see this green button, bootstrap is working
-		</a>
+		<Link className="btn btn-success" to="/contacts">{"Go to contacts"}</Link>
 	</div>
 );
